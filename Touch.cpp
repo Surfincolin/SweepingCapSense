@@ -11,10 +11,10 @@
 Touch::Touch( unsigned char pin )
 {
     mPin = pin;
-    
-    for( int i = 0; i < sizeof(results); i++ )
+    unsigned int d;
+    for( unsigned int d = 0; d < N; d++ )
     {
-    	results[i] = 0;	
+    	results[d] = 0;	
     }
     topPoint = 0;
     topValue = 0;

@@ -7,6 +7,8 @@
 #ifndef Touch_h
 #define Touch_h
 
+#define N 180  //How many results
+
 #include "Arduino.h"
 
 class Touch 
@@ -30,7 +32,8 @@ class Touch
     unsigned char   topPoint;
     uint16_t        topValue;
     uint16_t        interpolatedValue;
-    uint16_t        results[180];
+
+    uint16_t        results[N];
     uint16_t        value;
     
   
